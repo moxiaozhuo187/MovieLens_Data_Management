@@ -1,0 +1,75 @@
+# HBase optional extension for STQD6324 Assignment 2
+# Main pipeline: Spark + Cassandra
+# Optional extension: store selected analytical outputs in HBase
+
+# Start HBase shell
+hbase shell
+
+# Check HBase status and existing tables
+list
+status 'summary'
+
+# Create HBase tables
+create 'ml_top10_movies', 'info'
+create 'ml_fav_genres', 'info'
+
+# Insert selected Task 2 top movie results
+put 'ml_top10_movies', 'rank_1', 'info:movie_id', '1189'
+put 'ml_top10_movies', 'rank_1', 'info:title', 'Prefontaine (1997)'
+put 'ml_top10_movies', 'rank_1', 'info:avg_rating', '5.0'
+put 'ml_top10_movies', 'rank_1', 'info:rating_count', '3'
+
+put 'ml_top10_movies', 'rank_2', 'info:movie_id', '1293'
+put 'ml_top10_movies', 'rank_2', 'info:title', 'Star Kid (1997)'
+put 'ml_top10_movies', 'rank_2', 'info:avg_rating', '5.0'
+put 'ml_top10_movies', 'rank_2', 'info:rating_count', '3'
+
+put 'ml_top10_movies', 'rank_3', 'info:movie_id', '1467'
+put 'ml_top10_movies', 'rank_3', 'info:title', 'Saint of Fort Washington, The (1993)'
+put 'ml_top10_movies', 'rank_3', 'info:avg_rating', '5.0'
+put 'ml_top10_movies', 'rank_3', 'info:rating_count', '2'
+
+put 'ml_top10_movies', 'rank_4', 'info:movie_id', '1500'
+put 'ml_top10_movies', 'rank_4', 'info:title', 'Santa with Muscles (1996)'
+put 'ml_top10_movies', 'rank_4', 'info:avg_rating', '5.0'
+put 'ml_top10_movies', 'rank_4', 'info:rating_count', '2'
+
+put 'ml_top10_movies', 'rank_5', 'info:movie_id', '1536'
+put 'ml_top10_movies', 'rank_5', 'info:title', 'Aiqing wansui (1994)'
+put 'ml_top10_movies', 'rank_5', 'info:avg_rating', '5.0'
+put 'ml_top10_movies', 'rank_5', 'info:rating_count', '1'
+
+# Insert selected Task 3 favourite genre results
+put 'ml_fav_genres', 'user_1', 'info:age', '24'
+put 'ml_fav_genres', 'user_1', 'info:occupation', 'technician'
+put 'ml_fav_genres', 'user_1', 'info:total_ratings', '272'
+put 'ml_fav_genres', 'user_1', 'info:favourite_genre', 'Drama'
+put 'ml_fav_genres', 'user_1', 'info:genre_count', '107'
+
+put 'ml_fav_genres', 'user_2', 'info:age', '53'
+put 'ml_fav_genres', 'user_2', 'info:occupation', 'other'
+put 'ml_fav_genres', 'user_2', 'info:total_ratings', '62'
+put 'ml_fav_genres', 'user_2', 'info:favourite_genre', 'Drama'
+put 'ml_fav_genres', 'user_2', 'info:genre_count', '35'
+
+put 'ml_fav_genres', 'user_3', 'info:age', '23'
+put 'ml_fav_genres', 'user_3', 'info:occupation', 'writer'
+put 'ml_fav_genres', 'user_3', 'info:total_ratings', '54'
+put 'ml_fav_genres', 'user_3', 'info:favourite_genre', 'Drama'
+put 'ml_fav_genres', 'user_3', 'info:genre_count', '22'
+
+put 'ml_fav_genres', 'user_5', 'info:age', '33'
+put 'ml_fav_genres', 'user_5', 'info:occupation', 'other'
+put 'ml_fav_genres', 'user_5', 'info:total_ratings', '175'
+put 'ml_fav_genres', 'user_5', 'info:favourite_genre', 'Comedy'
+put 'ml_fav_genres', 'user_5', 'info:genre_count', '82'
+
+put 'ml_fav_genres', 'user_6', 'info:age', '42'
+put 'ml_fav_genres', 'user_6', 'info:occupation', 'executive'
+put 'ml_fav_genres', 'user_6', 'info:total_ratings', '211'
+put 'ml_fav_genres', 'user_6', 'info:favourite_genre', 'Drama'
+put 'ml_fav_genres', 'user_6', 'info:genre_count', '104'
+
+# Validate HBase results
+scan 'ml_top10_movies', {LIMIT => 5}
+scan 'ml_fav_genres', {LIMIT => 5}

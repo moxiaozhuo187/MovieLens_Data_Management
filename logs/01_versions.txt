@@ -1,0 +1,46 @@
+===== USER =====
+maria_dev
+
+===== DATE =====
+Mon May 25 09:34:00 UTC 2026
+
+===== PYTHON VERSION =====
+Python 2.7.5
+
+===== SPARK VERSION =====
+SPARK_MAJOR_VERSION is set to 2, using Spark2
+Welcome to
+      ____              __
+     / __/__  ___ _____/ /__
+    _\ \/ _ \/ _ `/ __/  '_/
+   /___/ .__/\_,_/_/ /_/\_\   version 2.3.0.2.6.5.0-292
+      /_/
+                        
+Using Scala version 2.11.8, OpenJDK 64-Bit Server VM, 1.8.0_171
+Branch HEAD
+Compiled by user jenkins on 2018-05-11T08:28:14Z
+Revision b6b578c8dff89bfc07981ea3bda074262c3800ad
+Url git@github.com:hortonworks/spark2.git
+Type --help for more information.
+
+===== HADOOP VERSION =====
+Hadoop 2.7.3.2.6.5.0-292
+Subversion git@github.com:hortonworks/hadoop.git -r 3091053c59a62c82d82c9f778c48bde5ef0a89a1
+Compiled by jenkins on 2018-05-11T07:53Z
+Compiled with protoc 2.5.0
+From source with checksum abed71da5bc89062f6f6711179f2058
+This command was run using /usr/hdp/2.6.5.0-292/hadoop/hadoop-common-2.7.3.2.6.5.0-292.jar
+
+===== HBASE VERSION =====
+2026-05-25 09:34:07,782 INFO  [main] util.VersionInfo: HBase 1.1.2.2.6.5.0-292
+2026-05-25 09:34:07,783 INFO  [main] util.VersionInfo: Source code repository git://ctr-e138-1518143905142-227583-01-000005.hwx.site/grid/0/jenkins/workspace/HDP-parallel-centos7/SOURCES/hbase revision=897822d4dd5956ca186974c10382e9094683fa29
+2026-05-25 09:34:07,783 INFO  [main] util.VersionInfo: Compiled by jenkins on Fri May 11 08:00:59 UTC 2018
+2026-05-25 09:34:07,783 INFO  [main] util.VersionInfo: From source with checksum 57528cabbce50eee309a3ca4c6616a22
+
+===== CQLSH VERSION =====
+cqlsh 5.0.1
+
+===== CASSANDRA CONNECTION TEST =====
+
+system_schema  system_auth  system  movielens  system_distributed  system_traces
+

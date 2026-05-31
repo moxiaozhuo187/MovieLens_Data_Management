@@ -1,0 +1,459 @@
+SPARK_MAJOR_VERSION is set to 2, using Spark2
+Ivy Default Cache set to: /home/maria_dev/.ivy2/cache
+The jars for the packages stored in: /home/maria_dev/.ivy2/jars
+:: loading settings :: url = jar:file:/usr/hdp/2.6.5.0-292/spark2/jars/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings.xml
+com.datastax.spark#spark-cassandra-connector_2.11 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent;1.0
+	confs: [default]
+	found com.datastax.spark#spark-cassandra-connector_2.11;2.3.0 in central
+	found com.twitter#jsr166e;1.1.0 in central
+	found commons-beanutils#commons-beanutils;1.9.3 in central
+	found commons-collections#commons-collections;3.2.2 in central
+	found joda-time#joda-time;2.3 in central
+	found org.joda#joda-convert;1.2 in central
+	found io.netty#netty-all;4.0.33.Final in central
+	found org.scala-lang#scala-reflect;2.11.8 in central
+:: resolution report :: resolve 789ms :: artifacts dl 32ms
+	:: modules in use:
+	com.datastax.spark#spark-cassandra-connector_2.11;2.3.0 from central in [default]
+	com.twitter#jsr166e;1.1.0 from central in [default]
+	commons-beanutils#commons-beanutils;1.9.3 from central in [default]
+	commons-collections#commons-collections;3.2.2 from central in [default]
+	io.netty#netty-all;4.0.33.Final from central in [default]
+	joda-time#joda-time;2.3 from central in [default]
+	org.joda#joda-convert;1.2 from central in [default]
+	org.scala-lang#scala-reflect;2.11.8 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   8   |   0   |   0   |   0   ||   8   |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent
+	confs: [default]
+	0 artifacts copied, 8 already retrieved (0kB/18ms)
+26/05/27 10:24:11 INFO SparkContext: Running Spark version 2.3.0.2.6.5.0-292
+26/05/27 10:24:11 INFO SparkContext: Submitted application: a2_ml_spark_cassandra
+26/05/27 10:24:11 INFO SecurityManager: Changing view acls to: maria_dev
+26/05/27 10:24:11 INFO SecurityManager: Changing modify acls to: maria_dev
+26/05/27 10:24:11 INFO SecurityManager: Changing view acls groups to: 
+26/05/27 10:24:11 INFO SecurityManager: Changing modify acls groups to: 
+26/05/27 10:24:11 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(maria_dev); groups with view permissions: Set(); users  with modify permissions: Set(maria_dev); groups with modify permissions: Set()
+26/05/27 10:24:12 INFO Utils: Successfully started service 'sparkDriver' on port 45801.
+26/05/27 10:24:12 INFO SparkEnv: Registering MapOutputTracker
+26/05/27 10:24:12 INFO SparkEnv: Registering BlockManagerMaster
+26/05/27 10:24:12 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+26/05/27 10:24:12 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+26/05/27 10:24:12 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-6d4b1df9-994b-4be6-befd-259608d47d83
+26/05/27 10:24:12 INFO MemoryStore: MemoryStore started with capacity 366.3 MB
+26/05/27 10:24:12 INFO SparkEnv: Registering OutputCommitCoordinator
+26/05/27 10:24:12 INFO log: Logging initialized @9860ms
+26/05/27 10:24:12 INFO Server: jetty-9.3.z-SNAPSHOT
+26/05/27 10:24:12 INFO Server: Started @10009ms
+26/05/27 10:24:12 INFO AbstractConnector: Started ServerConnector@75a61400{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+26/05/27 10:24:12 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+26/05/27 10:24:12 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@4eccd91e{/jobs,null,AVAILABLE,@Spark}
+26/05/27 10:24:12 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@77d6822c{/jobs/json,null,AVAILABLE,@Spark}
+26/05/27 10:24:12 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@7623a5d3{/jobs/job,null,AVAILABLE,@Spark}
+26/05/27 10:24:12 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@55d51aa2{/jobs/job/json,null,AVAILABLE,@Spark}
+26/05/27 10:24:12 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@16d125d6{/stages,null,AVAILABLE,@Spark}
+26/05/27 10:24:12 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@7d3717e2{/stages/json,null,AVAILABLE,@Spark}
+26/05/27 10:24:12 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@775ae774{/stages/stage,null,AVAILABLE,@Spark}
+26/05/27 10:24:12 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@508a057d{/stages/stage/json,null,AVAILABLE,@Spark}
+26/05/27 10:24:12 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@70cb295f{/stages/pool,null,AVAILABLE,@Spark}
+26/05/27 10:24:12 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@45c0d23a{/stages/pool/json,null,AVAILABLE,@Spark}
+26/05/27 10:24:12 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@6cefc4ba{/storage,null,AVAILABLE,@Spark}
+26/05/27 10:24:12 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@6c4e95b7{/storage/json,null,AVAILABLE,@Spark}
+26/05/27 10:24:12 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@45e6d8b0{/storage/rdd,null,AVAILABLE,@Spark}
+26/05/27 10:24:12 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@6749334{/storage/rdd/json,null,AVAILABLE,@Spark}
+26/05/27 10:24:12 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@142c4d54{/environment,null,AVAILABLE,@Spark}
+26/05/27 10:24:12 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@c57914b{/environment/json,null,AVAILABLE,@Spark}
+26/05/27 10:24:12 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@7f87eb29{/executors,null,AVAILABLE,@Spark}
+26/05/27 10:24:12 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@5dc82ade{/executors/json,null,AVAILABLE,@Spark}
+26/05/27 10:24:12 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@2b788ade{/executors/threadDump,null,AVAILABLE,@Spark}
+26/05/27 10:24:12 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@1b158b33{/executors/threadDump/json,null,AVAILABLE,@Spark}
+26/05/27 10:24:12 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@5b0bf5db{/static,null,AVAILABLE,@Spark}
+26/05/27 10:24:12 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@ef4cba6{/,null,AVAILABLE,@Spark}
+26/05/27 10:24:12 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@745220b8{/api,null,AVAILABLE,@Spark}
+26/05/27 10:24:12 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@6a5050a6{/jobs/job/kill,null,AVAILABLE,@Spark}
+26/05/27 10:24:12 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@e4637e6{/stages/stage/kill,null,AVAILABLE,@Spark}
+26/05/27 10:24:12 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://sandbox-hdp.hortonworks.com:4040
+26/05/27 10:24:12 INFO SparkContext: Added JAR file:///home/maria_dev/.ivy2/jars/com.datastax.spark_spark-cassandra-connector_2.11-2.3.0.jar at spark://sandbox-hdp.hortonworks.com:45801/jars/com.datastax.spark_spark-cassandra-connector_2.11-2.3.0.jar with timestamp 1779877452903
+26/05/27 10:24:12 INFO SparkContext: Added JAR file:///home/maria_dev/.ivy2/jars/com.twitter_jsr166e-1.1.0.jar at spark://sandbox-hdp.hortonworks.com:45801/jars/com.twitter_jsr166e-1.1.0.jar with timestamp 1779877452904
+26/05/27 10:24:12 INFO SparkContext: Added JAR file:///home/maria_dev/.ivy2/jars/commons-beanutils_commons-beanutils-1.9.3.jar at spark://sandbox-hdp.hortonworks.com:45801/jars/commons-beanutils_commons-beanutils-1.9.3.jar with timestamp 1779877452904
+26/05/27 10:24:12 INFO SparkContext: Added JAR file:///home/maria_dev/.ivy2/jars/joda-time_joda-time-2.3.jar at spark://sandbox-hdp.hortonworks.com:45801/jars/joda-time_joda-time-2.3.jar with timestamp 1779877452904
+26/05/27 10:24:12 INFO SparkContext: Added JAR file:///home/maria_dev/.ivy2/jars/org.joda_joda-convert-1.2.jar at spark://sandbox-hdp.hortonworks.com:45801/jars/org.joda_joda-convert-1.2.jar with timestamp 1779877452905
+26/05/27 10:24:12 INFO SparkContext: Added JAR file:///home/maria_dev/.ivy2/jars/io.netty_netty-all-4.0.33.Final.jar at spark://sandbox-hdp.hortonworks.com:45801/jars/io.netty_netty-all-4.0.33.Final.jar with timestamp 1779877452905
+26/05/27 10:24:12 INFO SparkContext: Added JAR file:///home/maria_dev/.ivy2/jars/org.scala-lang_scala-reflect-2.11.8.jar at spark://sandbox-hdp.hortonworks.com:45801/jars/org.scala-lang_scala-reflect-2.11.8.jar with timestamp 1779877452905
+26/05/27 10:24:12 INFO SparkContext: Added JAR file:///home/maria_dev/.ivy2/jars/commons-collections_commons-collections-3.2.2.jar at spark://sandbox-hdp.hortonworks.com:45801/jars/commons-collections_commons-collections-3.2.2.jar with timestamp 1779877452905
+26/05/27 10:24:12 INFO SparkContext: Added file file:/home/maria_dev/assignment2/assignment2_movielens.py at file:/home/maria_dev/assignment2/assignment2_movielens.py with timestamp 1779877452965
+26/05/27 10:24:12 INFO Utils: Copying /home/maria_dev/assignment2/assignment2_movielens.py to /tmp/spark-dcde14ac-eda9-4908-849d-18b638e0ac90/userFiles-12334523-d411-4d91-8545-80e1e6fdb929/assignment2_movielens.py
+26/05/27 10:24:12 INFO SparkContext: Added file file:///home/maria_dev/.ivy2/jars/com.datastax.spark_spark-cassandra-connector_2.11-2.3.0.jar at file:///home/maria_dev/.ivy2/jars/com.datastax.spark_spark-cassandra-connector_2.11-2.3.0.jar with timestamp 1779877452997
+26/05/27 10:24:12 INFO Utils: Copying /home/maria_dev/.ivy2/jars/com.datastax.spark_spark-cassandra-connector_2.11-2.3.0.jar to /tmp/spark-dcde14ac-eda9-4908-849d-18b638e0ac90/userFiles-12334523-d411-4d91-8545-80e1e6fdb929/com.datastax.spark_spark-cassandra-connector_2.11-2.3.0.jar
+26/05/27 10:24:13 INFO SparkContext: Added file file:///home/maria_dev/.ivy2/jars/com.twitter_jsr166e-1.1.0.jar at file:///home/maria_dev/.ivy2/jars/com.twitter_jsr166e-1.1.0.jar with timestamp 1779877453076
+26/05/27 10:24:13 INFO Utils: Copying /home/maria_dev/.ivy2/jars/com.twitter_jsr166e-1.1.0.jar to /tmp/spark-dcde14ac-eda9-4908-849d-18b638e0ac90/userFiles-12334523-d411-4d91-8545-80e1e6fdb929/com.twitter_jsr166e-1.1.0.jar
+26/05/27 10:24:13 INFO SparkContext: Added file file:///home/maria_dev/.ivy2/jars/commons-beanutils_commons-beanutils-1.9.3.jar at file:///home/maria_dev/.ivy2/jars/commons-beanutils_commons-beanutils-1.9.3.jar with timestamp 1779877453084
+26/05/27 10:24:13 INFO Utils: Copying /home/maria_dev/.ivy2/jars/commons-beanutils_commons-beanutils-1.9.3.jar to /tmp/spark-dcde14ac-eda9-4908-849d-18b638e0ac90/userFiles-12334523-d411-4d91-8545-80e1e6fdb929/commons-beanutils_commons-beanutils-1.9.3.jar
+26/05/27 10:24:13 INFO SparkContext: Added file file:///home/maria_dev/.ivy2/jars/joda-time_joda-time-2.3.jar at file:///home/maria_dev/.ivy2/jars/joda-time_joda-time-2.3.jar with timestamp 1779877453097
+26/05/27 10:24:13 INFO Utils: Copying /home/maria_dev/.ivy2/jars/joda-time_joda-time-2.3.jar to /tmp/spark-dcde14ac-eda9-4908-849d-18b638e0ac90/userFiles-12334523-d411-4d91-8545-80e1e6fdb929/joda-time_joda-time-2.3.jar
+26/05/27 10:24:13 INFO SparkContext: Added file file:///home/maria_dev/.ivy2/jars/org.joda_joda-convert-1.2.jar at file:///home/maria_dev/.ivy2/jars/org.joda_joda-convert-1.2.jar with timestamp 1779877453117
+26/05/27 10:24:13 INFO Utils: Copying /home/maria_dev/.ivy2/jars/org.joda_joda-convert-1.2.jar to /tmp/spark-dcde14ac-eda9-4908-849d-18b638e0ac90/userFiles-12334523-d411-4d91-8545-80e1e6fdb929/org.joda_joda-convert-1.2.jar
+26/05/27 10:24:13 INFO SparkContext: Added file file:///home/maria_dev/.ivy2/jars/io.netty_netty-all-4.0.33.Final.jar at file:///home/maria_dev/.ivy2/jars/io.netty_netty-all-4.0.33.Final.jar with timestamp 1779877453126
+26/05/27 10:24:13 INFO Utils: Copying /home/maria_dev/.ivy2/jars/io.netty_netty-all-4.0.33.Final.jar to /tmp/spark-dcde14ac-eda9-4908-849d-18b638e0ac90/userFiles-12334523-d411-4d91-8545-80e1e6fdb929/io.netty_netty-all-4.0.33.Final.jar
+26/05/27 10:24:13 INFO SparkContext: Added file file:///home/maria_dev/.ivy2/jars/org.scala-lang_scala-reflect-2.11.8.jar at file:///home/maria_dev/.ivy2/jars/org.scala-lang_scala-reflect-2.11.8.jar with timestamp 1779877453162
+26/05/27 10:24:13 INFO Utils: Copying /home/maria_dev/.ivy2/jars/org.scala-lang_scala-reflect-2.11.8.jar to /tmp/spark-dcde14ac-eda9-4908-849d-18b638e0ac90/userFiles-12334523-d411-4d91-8545-80e1e6fdb929/org.scala-lang_scala-reflect-2.11.8.jar
+26/05/27 10:24:13 INFO SparkContext: Added file file:///home/maria_dev/.ivy2/jars/commons-collections_commons-collections-3.2.2.jar at file:///home/maria_dev/.ivy2/jars/commons-collections_commons-collections-3.2.2.jar with timestamp 1779877453225
+26/05/27 10:24:13 INFO Utils: Copying /home/maria_dev/.ivy2/jars/commons-collections_commons-collections-3.2.2.jar to /tmp/spark-dcde14ac-eda9-4908-849d-18b638e0ac90/userFiles-12334523-d411-4d91-8545-80e1e6fdb929/commons-collections_commons-collections-3.2.2.jar
+26/05/27 10:24:13 INFO Executor: Starting executor ID driver on host localhost
+26/05/27 10:24:13 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 33687.
+26/05/27 10:24:13 INFO NettyBlockTransferService: Server created on sandbox-hdp.hortonworks.com:33687
+26/05/27 10:24:13 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+26/05/27 10:24:13 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, sandbox-hdp.hortonworks.com, 33687, None)
+26/05/27 10:24:13 INFO BlockManagerMasterEndpoint: Registering block manager sandbox-hdp.hortonworks.com:33687 with 366.3 MB RAM, BlockManagerId(driver, sandbox-hdp.hortonworks.com, 33687, None)
+26/05/27 10:24:13 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, sandbox-hdp.hortonworks.com, 33687, None)
+26/05/27 10:24:13 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, sandbox-hdp.hortonworks.com, 33687, None)
+26/05/27 10:24:13 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@21962141{/metrics/json,null,AVAILABLE,@Spark}
+26/05/27 10:24:14 INFO SharedState: loading hive config file: file:/etc/spark2/2.6.5.0-292/0/hive-site.xml
+26/05/27 10:24:14 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/home/maria_dev/assignment2/spark-warehouse/').
+26/05/27 10:24:14 INFO SharedState: Warehouse path is 'file:/home/maria_dev/assignment2/spark-warehouse/'.
+26/05/27 10:24:14 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@6cf8b2c2{/SQL,null,AVAILABLE,@Spark}
+26/05/27 10:24:14 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@19605284{/SQL/json,null,AVAILABLE,@Spark}
+26/05/27 10:24:14 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@c39f04e{/SQL/execution,null,AVAILABLE,@Spark}
+26/05/27 10:24:14 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@2707da2{/SQL/execution/json,null,AVAILABLE,@Spark}
+26/05/27 10:24:14 INFO ContextHandler: Started o.s.j.s.ServletContextHandler@f8d9baa{/static/sql,null,AVAILABLE,@Spark}
+26/05/27 10:24:16 INFO StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint
+
+start assignment 2 pipeline
+spark version: 2.3.0.2.6.5.0-292
+hdfs path: hdfs:///user/maria_dev/ml-100k
+cassandra keyspace: movielens
+
+read raw files from hdfs
+u.data rows: 100000
+u.item rows: 1682
+u.user rows: 943
+
+parse rdd
+
+make dataframe
+
+rate_df schema
+root
+ |-- movie_id: long (nullable = true)
+ |-- rating: double (nullable = true)
+ |-- ts: long (nullable = true)
+ |-- user_id: long (nullable = true)
+
+
+mv_df schema
+root
+ |-- movie_id: long (nullable = true)
+ |-- title: string (nullable = true)
+
+
+usr_df schema
+root
+ |-- age: long (nullable = true)
+ |-- gender: string (nullable = true)
+ |-- occupation: string (nullable = true)
+ |-- user_id: long (nullable = true)
+ |-- zip: string (nullable = true)
+
+
+mg_df schema
+root
+ |-- genre: string (nullable = true)
+ |-- movie_id: long (nullable = true)
+ |-- title: string (nullable = true)
+
+
+clean data
+clean rating: 100000
+clean movie: 1682
+clean user: 943
+movie genre rows: 2893
+
+sample rating
++--------+-------+------+---------+
+|movie_id|user_id|rating|ts       |
++--------+-------+------+---------+
+|26      |474    |4.0   |887927509|
+|26      |222    |3.0   |878183043|
+|26      |270    |5.0   |876954995|
+|26      |293    |3.0   |888907015|
+|26      |243    |3.0   |879988459|
++--------+-------+------+---------+
+only showing top 5 rows
+
+
+sample movie
++--------+---------------------------------------------------------------------------+
+|movie_id|title                                                                      |
++--------+---------------------------------------------------------------------------+
+|26      |Brothers McMullen, The (1995)                                              |
+|29      |Batman Forever (1995)                                                      |
+|474     |Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1963)|
+|964     |Month by the Lake, A (1995)                                                |
+|1677    |Sweet Nothing (1995)                                                       |
++--------+---------------------------------------------------------------------------+
+only showing top 5 rows
+
+
+sample user
++---+------+-------------+-------+-----+
+|age|gender|occupation   |user_id|zip  |
++---+------+-------------+-------+-----+
+|49 |M     |engineer     |26     |21044|
+|41 |M     |programmer   |29     |94043|
+|51 |M     |executive    |474    |93711|
+|51 |F     |educator     |65     |48118|
+|33 |M     |administrator|191    |95161|
++---+------+-------------+-------+-----+
+only showing top 5 rows
+
+
+task 1: average rating for each movie
++--------+----------------------------------------------------+----------+------------+
+|movie_id|title                                               |avg_rating|rating_count|
++--------+----------------------------------------------------+----------+------------+
+|1       |Toy Story (1995)                                    |3.8783    |452         |
+|2       |GoldenEye (1995)                                    |3.2061    |131         |
+|3       |Four Rooms (1995)                                   |3.0333    |90          |
+|4       |Get Shorty (1995)                                   |3.5502    |209         |
+|5       |Copycat (1995)                                      |3.3023    |86          |
+|6       |Shanghai Triad (Yao a yao yao dao waipo qiao) (1995)|3.5769    |26          |
+|7       |Twelve Monkeys (1995)                               |3.7985    |392         |
+|8       |Babe (1995)                                         |3.9954    |219         |
+|9       |Dead Man Walking (1995)                             |3.8963    |299         |
+|10      |Richard III (1995)                                  |3.8315    |89          |
++--------+----------------------------------------------------+----------+------------+
+only showing top 10 rows
+
+
+task 2: top 10 movies by average rating
++----+--------+-------------------------------------------------+----------+------------+
+|rank|movie_id|title                                            |avg_rating|rating_count|
++----+--------+-------------------------------------------------+----------+------------+
+|1   |1189    |Prefontaine (1997)                               |5.0       |3           |
+|2   |1293    |Star Kid (1997)                                  |5.0       |3           |
+|3   |1467    |Saint of Fort Washington, The (1993)             |5.0       |2           |
+|4   |1500    |Santa with Muscles (1996)                        |5.0       |2           |
+|5   |1536    |Aiqing wansui (1994)                             |5.0       |1           |
+|6   |1653    |Entertaining Angels: The Dorothy Day Story (1996)|5.0       |1           |
+|7   |814     |Great Day in Harlem, A (1994)                    |5.0       |1           |
+|8   |1201    |Marlene Dietrich: Shadow and Light (1996)        |5.0       |1           |
+|9   |1599    |Someone Else's America (1995)                    |5.0       |1           |
+|10  |1122    |They Made Me a Criminal (1939)                   |5.0       |1           |
++----+--------+-------------------------------------------------+----------+------------+
+
+
+task 3: favourite genre for users with at least 50 ratings
++-------+---+------+-------------+-----+-------------+---------------+-----------+
+|user_id|age|gender|occupation   |zip  |total_ratings|favourite_genre|genre_count|
++-------+---+------+-------------+-----+-------------+---------------+-----------+
+|1      |24 |M     |technician   |85711|272          |Drama          |107        |
+|2      |53 |F     |other        |94043|62           |Drama          |35         |
+|3      |23 |M     |writer       |32067|54           |Drama          |22         |
+|5      |33 |F     |other        |15213|175          |Comedy         |82         |
+|6      |42 |M     |executive    |98101|211          |Drama          |104        |
+|7      |57 |M     |administrator|91344|403          |Drama          |146        |
+|8      |36 |M     |administrator|05201|59           |Action         |39         |
+|10     |53 |M     |lawyer       |90703|184          |Drama          |81         |
+|11     |39 |F     |other        |30329|181          |Drama          |82         |
+|12     |28 |F     |other        |06405|51           |Drama          |24         |
+|13     |47 |M     |educator     |29206|636          |Drama          |218        |
+|14     |45 |M     |scientist    |55106|98           |Drama          |39         |
+|15     |49 |F     |educator     |97301|104          |Drama          |48         |
+|16     |21 |M     |entertainment|10309|140          |Drama          |56         |
+|18     |35 |F     |other        |37212|277          |Drama          |141        |
+|21     |26 |M     |writer       |30068|179          |Thriller       |66         |
+|22     |25 |M     |writer       |40206|128          |Comedy         |72         |
+|23     |30 |F     |artist       |48197|151          |Drama          |54         |
+|24     |21 |F     |artist       |94533|68           |Drama          |37         |
+|25     |39 |M     |engineer     |55107|78           |Comedy         |26         |
++-------+---+------+-------------+-----+-------------+---------------+-----------+
+only showing top 20 rows
+
+
+task 4: users less than 20 years old
+number of users under 20: 77
++-------+---+------+-------------+-----+
+|user_id|age|gender|occupation   |zip  |
++-------+---+------+-------------+-----+
+|30     |7  |M     |student      |55436|
+|36     |19 |F     |student      |93117|
+|52     |18 |F     |student      |55105|
+|57     |16 |M     |none         |84010|
+|67     |17 |M     |student      |60402|
+|68     |19 |M     |student      |22904|
+|101    |15 |M     |student      |05146|
+|110    |19 |M     |student      |77840|
+|142    |13 |M     |other        |48118|
+|179    |15 |M     |entertainment|20755|
+|206    |14 |F     |student      |53115|
+|221    |19 |M     |student      |20685|
+|223    |19 |F     |student      |47906|
+|246    |19 |M     |student      |28734|
+|257    |17 |M     |student      |77005|
+|258    |19 |F     |student      |77801|
+|262    |19 |F     |student      |78264|
+|270    |18 |F     |student      |63119|
+|281    |15 |F     |student      |06059|
+|289    |11 |M     |none         |94619|
++-------+---+------+-------------+-----+
+only showing top 20 rows
+
+
+task 5: scientist users aged 30 to 40
+number of scientist age 30-40: 16
++-------+---+------+----------+-----+
+|user_id|age|gender|occupation|zip  |
++-------+---+------+----------+-----+
+|40     |38 |M     |scientist |27514|
+|71     |39 |M     |scientist |98034|
+|74     |39 |M     |scientist |T8H1N|
+|107    |39 |M     |scientist |60466|
+|183    |33 |M     |scientist |27708|
+|272    |33 |M     |scientist |53706|
+|309    |40 |M     |scientist |70802|
+|337    |37 |M     |scientist |10522|
+|430    |38 |M     |scientist |98199|
+|538    |31 |M     |scientist |21010|
+|543    |33 |M     |scientist |95123|
+|554    |32 |M     |scientist |62901|
+|643    |39 |M     |scientist |55122|
+|730    |31 |F     |scientist |32114|
+|874    |36 |M     |scientist |37076|
+|918    |40 |M     |scientist |70116|
++-------+---+------+----------+-----+
+
+
+write result to cassandra
+write done
+
+read back from cassandra for checking
+
+check average_movie_ratings
++--------+----------+------------+----------------------------------------------------+
+|movie_id|avg_rating|rating_count|title                                               |
++--------+----------+------------+----------------------------------------------------+
+|1       |3.8783    |452         |Toy Story (1995)                                    |
+|2       |3.2061    |131         |GoldenEye (1995)                                    |
+|3       |3.0333    |90          |Four Rooms (1995)                                   |
+|4       |3.5502    |209         |Get Shorty (1995)                                   |
+|5       |3.3023    |86          |Copycat (1995)                                      |
+|6       |3.5769    |26          |Shanghai Triad (Yao a yao yao dao waipo qiao) (1995)|
+|7       |3.7985    |392         |Twelve Monkeys (1995)                               |
+|8       |3.9954    |219         |Babe (1995)                                         |
+|9       |3.8963    |299         |Dead Man Walking (1995)                             |
+|10      |3.8315    |89          |Richard III (1995)                                  |
++--------+----------+------------+----------------------------------------------------+
+only showing top 10 rows
+
+
+check top10_movies
++----+----------+--------+------------+-------------------------------------------------+
+|rank|avg_rating|movie_id|rating_count|title                                            |
++----+----------+--------+------------+-------------------------------------------------+
+|1   |5.0       |1189    |3           |Prefontaine (1997)                               |
+|2   |5.0       |1293    |3           |Star Kid (1997)                                  |
+|3   |5.0       |1467    |2           |Saint of Fort Washington, The (1993)             |
+|4   |5.0       |1500    |2           |Santa with Muscles (1996)                        |
+|5   |5.0       |1536    |1           |Aiqing wansui (1994)                             |
+|6   |5.0       |1653    |1           |Entertaining Angels: The Dorothy Day Story (1996)|
+|7   |5.0       |814     |1           |Great Day in Harlem, A (1994)                    |
+|8   |5.0       |1201    |1           |Marlene Dietrich: Shadow and Light (1996)        |
+|9   |5.0       |1599    |1           |Someone Else's America (1995)                    |
+|10  |5.0       |1122    |1           |They Made Me a Criminal (1939)                   |
++----+----------+--------+------------+-------------------------------------------------+
+
+
+check user_favourite_genres
++-------+---+---------------+------+-----------+-------------+-------------+-----+
+|user_id|age|favourite_genre|gender|genre_count|occupation   |total_ratings|zip  |
++-------+---+---------------+------+-----------+-------------+-------------+-----+
+|1      |24 |Drama          |M     |107        |technician   |272          |85711|
+|2      |53 |Drama          |F     |35         |other        |62           |94043|
+|3      |23 |Drama          |M     |22         |writer       |54           |32067|
+|5      |33 |Comedy         |F     |82         |other        |175          |15213|
+|6      |42 |Drama          |M     |104        |executive    |211          |98101|
+|7      |57 |Drama          |M     |146        |administrator|403          |91344|
+|8      |36 |Action         |M     |39         |administrator|59           |05201|
+|10     |53 |Drama          |M     |81         |lawyer       |184          |90703|
+|11     |39 |Drama          |F     |82         |other        |181          |30329|
+|12     |28 |Drama          |F     |24         |other        |51           |06405|
+|13     |47 |Drama          |M     |218        |educator     |636          |29206|
+|14     |45 |Drama          |M     |39         |scientist    |98           |55106|
+|15     |49 |Drama          |F     |48         |educator     |104          |97301|
+|16     |21 |Drama          |M     |56         |entertainment|140          |10309|
+|18     |35 |Drama          |F     |141        |other        |277          |37212|
+|21     |26 |Thriller       |M     |66         |writer       |179          |30068|
+|22     |25 |Comedy         |M     |72         |writer       |128          |40206|
+|23     |30 |Drama          |F     |54         |artist       |151          |48197|
+|24     |21 |Drama          |F     |37         |artist       |68           |94533|
+|25     |39 |Comedy         |M     |26         |engineer     |78           |55107|
++-------+---+---------------+------+-----------+-------------+-------------+-----+
+only showing top 20 rows
+
+
+check users_under_20
++-------+---+------+-------------+-----+
+|user_id|age|gender|occupation   |zip  |
++-------+---+------+-------------+-----+
+|30     |7  |M     |student      |55436|
+|36     |19 |F     |student      |93117|
+|52     |18 |F     |student      |55105|
+|57     |16 |M     |none         |84010|
+|67     |17 |M     |student      |60402|
+|68     |19 |M     |student      |22904|
+|101    |15 |M     |student      |05146|
+|110    |19 |M     |student      |77840|
+|142    |13 |M     |other        |48118|
+|179    |15 |M     |entertainment|20755|
+|206    |14 |F     |student      |53115|
+|221    |19 |M     |student      |20685|
+|223    |19 |F     |student      |47906|
+|246    |19 |M     |student      |28734|
+|257    |17 |M     |student      |77005|
+|258    |19 |F     |student      |77801|
+|262    |19 |F     |student      |78264|
+|270    |18 |F     |student      |63119|
+|281    |15 |F     |student      |06059|
+|289    |11 |M     |none         |94619|
++-------+---+------+-------------+-----+
+only showing top 20 rows
+
+
+check scientists_30_40
++-------+---+------+----------+-----+
+|user_id|age|gender|occupation|zip  |
++-------+---+------+----------+-----+
+|40     |38 |M     |scientist |27514|
+|71     |39 |M     |scientist |98034|
+|74     |39 |M     |scientist |T8H1N|
+|107    |39 |M     |scientist |60466|
+|183    |33 |M     |scientist |27708|
+|272    |33 |M     |scientist |53706|
+|309    |40 |M     |scientist |70802|
+|337    |37 |M     |scientist |10522|
+|430    |38 |M     |scientist |98199|
+|538    |31 |M     |scientist |21010|
+|543    |33 |M     |scientist |95123|
+|554    |32 |M     |scientist |62901|
+|643    |39 |M     |scientist |55122|
+|730    |31 |F     |scientist |32114|
+|874    |36 |M     |scientist |37076|
+|918    |40 |M     |scientist |70116|
++-------+---+------+----------+-----+
+
+
+Discussion
+task 1 calculates average rating and rating count for each movie.
+task 2 ranks movies by average rating. rating_count is used when average rating ties.
+task 3 uses users with at least 50 ratings and finds the genre they rated most often.
+for multi-genre movies, one rating is counted once for each genre.
+task 4 filters users whose age is below 20.
+task 5 filters scientist users aged from 30 to 40.
+all result dataframes are written into cassandra and read back for checking.
+
+finished
